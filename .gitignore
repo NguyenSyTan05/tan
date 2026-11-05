@@ -1,0 +1,94 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+.venv/
+env/
+venv/
+ENV/
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Next.js Build
+.next/
+out/
+.vercel
+
+# Testing & Cache
+.coverage
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+cache/
+.cache/
+
+# Large Raw Model Binaries (> 100MB exceed GitHub Limits)
+*.onnx
+*.tar.gz
+*.zip
+*.parquet
+**/model.bin
+**/model.safetensors
+**/optimizer.pt
+**/checkpoint-*/
+
+# Keep Trained LoRA Adapters (< 15MB) & Configs Tracked in Git!
+!**/adapter_model.safetensors
+!**/training_args.bin
+
+# Heavy Audio Datasets & Model Cache (Keep manifests, LoRA adapters, and code)
+.models/
+classbridge/backend/ai-service/.models/
+classbridge/training/data/downloads/
+classbridge/training/data/vivos/
+classbridge/training/ViMD_Dataset/
+classbridge/backend/data/samples/
+classbridge/training/outputs/
+classbridge/training/Module_Train/**/output_model_*_merged/
+ai_backend/03_MODEL_CHECKPOINTS/
+ai_backend/04_DATASETS_TAM_THOI/audio/
+
+# Environment Variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Exclude Module 2 folder as requested
+DoAN2module/
+
+# Temporary & Local Tools
+.tools/
+bvv
+*.log
+*.pid
+
+# IDE & OS
+.git_tool/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
